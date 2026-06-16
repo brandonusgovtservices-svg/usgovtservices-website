@@ -16,9 +16,7 @@
     h1, h2, h3 { font-family: 'Spectral', Georgia, serif; color: #0A2240; line-height: 1.18; font-weight: 600; }
     a { color: inherit; text-decoration: none; }
   </style>
-<style>
-  [data-hover] { transition: all .18s ease; }
-</style>
+<style>[data-hover]{transition:all .18s ease;}</style>
 </head>
 <body>
 <div style="height:5px;background:#B22234;width:100%;"></div>
@@ -52,7 +50,7 @@
       <p style="font-size:16px;color:#6B7688;font-style:italic;margin-bottom:8px;">Effective date: 2026.</p>
 
       <h2 style="font-size:26px;color:#0A2240;margin-bottom:14px;margin-top:40px;">Information we collect</h2>
-      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">This website collects only the information you choose to share with us — primarily through email (John@usgovtservices.com) or telephone ((703) 672-1844). We do not require account creation, and we do not gate downloads behind email forms.</p>
+      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">This website collects only the information you choose to share with us — primarily through email (john@usgovtservices.com) or telephone ((703) 409-8785). We do not require account creation, and we do not gate downloads behind email forms.</p>
 
       <h2 style="font-size:26px;color:#0A2240;margin-bottom:14px;margin-top:40px;">How we use information</h2>
       <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">Information you share with us by email or phone is used solely to respond to your inquiry, evaluate potential contracting or teaming opportunities, and maintain professional records of our correspondence. We do not sell, rent, or share your information with third parties for marketing purposes.</p>
@@ -70,7 +68,7 @@
       <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">We follow reasonable administrative, technical, and physical safeguards to protect the information you share with us. No method of transmission over the internet is fully secure; if you have particularly sensitive information, please contact us by phone.</p>
 
       <h2 style="font-size:26px;color:#0A2240;margin-bottom:14px;margin-top:40px;">Your choices</h2>
-      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">You may request a copy of information we have on file for you, ask us to correct it, or ask us to delete it (subject to records-retention requirements). Send requests to <a href="mailto:John@usgovtservices.com" style="color:#B22234;font-weight:600;" data-hover="text-decoration:underline;">John@usgovtservices.com</a>.</p>
+      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">You may request a copy of information we have on file for you, ask us to correct it, or ask us to delete it (subject to records-retention requirements). Send requests to <a href="mailto:john@usgovtservices.com" style="color:#B22234;font-weight:600;" data-hover="text-decoration:underline;">john@usgovtservices.com</a>.</p>
 
       <h2 style="font-size:26px;color:#0A2240;margin-bottom:14px;margin-top:40px;">Children</h2>
       <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">This website is intended for business and federal-government audiences. It is not directed to children under 13, and we do not knowingly collect information from children.</p>
@@ -79,7 +77,7 @@
       <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">We may update this Privacy Policy from time to time. Material changes will be reflected by an updated effective date at the top of this page.</p>
 
       <h2 style="font-size:26px;color:#0A2240;margin-bottom:14px;margin-top:40px;">Contact</h2>
-      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:40px;">US Government Services LLC<br>McLean, VA 22102<br>(703) 672-1844 &nbsp;·&nbsp; <a href="mailto:John@usgovtservices.com" style="color:#B22234;font-weight:600;" data-hover="text-decoration:underline;">John@usgovtservices.com</a></p>
+      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:40px;">US Government Services LLC<br>McLean, VA 22102<br>(703) 409-8785 &nbsp;·&nbsp; <a href="mailto:john@usgovtservices.com" style="color:#B22234;font-weight:600;" data-hover="text-decoration:underline;">john@usgovtservices.com</a></p>
       <p style="font-size:14px;color:#6B7688;">Last updated: 2026.</p>
     </div>
   </div>
@@ -96,17 +94,11 @@
   </div>
 </footer>
 <script>
-// Handle data-hover (style-hover) for interactive elements
-document.querySelectorAll('[data-hover]').forEach(function(el) {
-  var base = el.getAttribute('style') || '';
-  var hover = el.getAttribute('data-hover') || '';
-  el.addEventListener('mouseenter', function() {
-    var combined = base + ';' + hover;
-    el.setAttribute('style', combined);
-  });
-  el.addEventListener('mouseleave', function() {
-    el.setAttribute('style', base);
-  });
+document.querySelectorAll('[data-hover]').forEach(function(el){
+  var base=el.getAttribute('style')||'';
+  var hover=el.getAttribute('data-hover')||'';
+  el.addEventListener('mouseenter',function(){el.setAttribute('style',base+';'+hover);});
+  el.addEventListener('mouseleave',function(){el.setAttribute('style',base);});
 });
 </script>
 </body>

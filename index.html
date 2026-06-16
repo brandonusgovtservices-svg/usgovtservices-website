@@ -19,9 +19,7 @@
     @keyframes up { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
     .founder-photo { display: block; width: 100%; height: 100%; }
   </style>
-<style>
-  [data-hover] { transition: all .18s ease; }
-</style>
+<style>[data-hover]{transition:all .18s ease;}</style>
 </head>
 <body>
 <!-- NAV -->
@@ -59,7 +57,7 @@
         <span style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);">Service-Disabled Veteran-Owned Small Business</span>
       </div>
       <h1 style="font-size:72px;color:#fff;font-weight:700;margin-bottom:24px;line-height:1.06;letter-spacing:-.02em;animation:up .65s ease .15s both;">Your Mission.<br><span style="color:#B22234;">Our Standard.</span></h1>
-      <p style="font-size:20px;color:rgba(255,255,255,.55);max-width:540px;line-height:1.72;margin-bottom:40px;font-weight:300;animation:up .65s ease .25s both;">Federal IT, cybersecurity, and consulting — led by a Vietnam combat veteran with 50 years of service to this country.</p>
+      <p style="font-size:20px;color:rgba(255,255,255,.55);max-width:540px;line-height:1.72;margin-bottom:40px;font-weight:300;animation:up .65s ease .25s both;">IT Consulting, Management &amp; Staffing for federal agencies — led by a Vietnam combat veteran with 50 years of service to this country.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px;animation:up .65s ease .35s both;">
         <a href="about.html#services" style="background:#B22234;color:#fff;font-size:15px;font-weight:600;padding:14px 28px;border-radius:5px;transition:all .2s;" data-hover="background:#9B1D2B;transform:translateY(-2px);box-shadow:0 8px 24px rgba(178,34,52,.35);">Explore Our Services</a>
         <a href="capability-statement.html" style="color:rgba(255,255,255,.8);font-size:15px;font-weight:500;padding:14px 28px;border-radius:5px;border:1.5px solid rgba(255,255,255,.18);transition:all .2s;" data-hover="border-color:rgba(255,255,255,.5);color:#fff;">Capability Statement</a>
@@ -86,7 +84,7 @@
   <div style="display:grid;grid-template-columns:440px 1fr;">
     <!-- Photo — explicit pixel height to fill -->
     <div style="position:relative;overflow:hidden;min-height:520px;">
-      <div style="width:100%;height:100%;min-height:520px;background:#1a2f48;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:14px;text-align:center;padding:20px;" data-image-slot-id="founder-portrait">Drop founder portrait here LTC John Michael Stacy, USA (Ret.)</div>
+      <div id="founder-portrait" style="width:100%;height:100%;min-height:480px;background:#12253b;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:14px;text-align:center;padding:24px;cursor:pointer;" onclick="this.querySelector('input').click()"><input type="file" accept="image/*" style="display:none" onchange="var r=new FileReader();r.onload=function(e){var p=this.parentElement;p.style.backgroundImage='url('+e.target.result+')';p.style.backgroundSize='cover';p.style.backgroundPosition='center top';p.style.color='transparent';p.querySelector('input').style.display='none';};r.readAsDataURL(this.files[0]);"><span>📷 Click to add photo<br><small style="opacity:.6">Drop founder portrait here LTC John Michael Stacy, USA (Ret.)</small></span></div>
       <div style="position:absolute;inset:0;background:linear-gradient(to right,transparent 55%,rgba(7,26,51,.85) 100%);pointer-events:none;z-index:1;"></div>
     </div>
     <!-- Bio + stats -->
@@ -131,19 +129,19 @@
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.07);border-radius:8px;overflow:hidden;">
       <div style="background:#051021;padding:32px 28px;transition:background .2s;" data-hover="background:#071A33;">
-        <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">541519 · 541512</div>
-        <h3 style="font-size:17px;color:#fff;font-weight:600;margin-bottom:8px;line-height:1.25;">IT &amp; Cybersecurity</h3>
-        <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">Zero Trust, CMMC 2.0, NIST 800-171, SOC operations, vulnerability assessment.</p>
-      </div>
-      <div style="background:#051021;padding:32px 28px;transition:background .2s;" data-hover="background:#071A33;">
-        <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">541511</div>
-        <h3 style="font-size:17px;color:#fff;font-weight:600;margin-bottom:8px;line-height:1.25;">Software &amp; AI Development</h3>
-        <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">Federal applications, AI/ML integration, DevSecOps, legacy modernization.</p>
+        <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">541611 · 541690</div>
+        <h3 style="font-size:17px;color:#fff;font-weight:600;margin-bottom:8px;line-height:1.25;">IT Consulting &amp; Management</h3>
+        <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">CIO advisory, program management, AI strategy, federal training.</p>
       </div>
       <div style="background:#051021;padding:32px 28px;transition:background .2s;" data-hover="background:#071A33;">
         <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">561320</div>
         <h3 style="font-size:17px;color:#fff;font-weight:600;margin-bottom:8px;line-height:1.25;">IT Staffing &amp; Augmentation</h3>
         <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">Cleared IT professionals, surge support, contract and direct placement.</p>
+      </div>
+      <div style="background:#051021;padding:32px 28px;transition:background .2s;" data-hover="background:#071A33;">
+        <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">541511</div>
+        <h3 style="font-size:17px;color:#fff;font-weight:600;margin-bottom:8px;line-height:1.25;">Software &amp; AI Development</h3>
+        <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">Federal applications, AI/ML integration, DevSecOps, legacy modernization.</p>
       </div>
       <div style="background:#051021;padding:32px 28px;transition:background .2s;" data-hover="background:#071A33;">
         <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">518210</div>
@@ -156,9 +154,9 @@
         <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">Network infrastructure, VoIP, satellite, secure communications support.</p>
       </div>
       <div style="background:#051021;padding:32px 28px;transition:background .2s;" data-hover="background:#071A33;">
-        <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">541611 · 541690</div>
-        <h3 style="font-size:17px;color:#fff;font-weight:600;margin-bottom:8px;line-height:1.25;">IT Consulting &amp; Management</h3>
-        <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">CIO advisory, program management, AI strategy, federal training.</p>
+        <div style="font-family:monospace;font-size:11px;font-weight:700;color:#B22234;letter-spacing:.08em;margin-bottom:12px;">541519 · 541512</div>
+        <h3 style="font-size:17px;color:#fff;font-weight:600;margin-bottom:8px;line-height:1.25;">IT &amp; Cybersecurity</h3>
+        <p style="font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.65;">Zero Trust, CMMC 2.0, NIST 800-171, SOC operations, vulnerability assessment.</p>
       </div>
     </div>
   </div>
@@ -214,7 +212,7 @@
           <tr style="border-bottom:1px solid #F0F2F5;"><td style="padding:13px 28px;font-size:12px;font-weight:700;color:#8A95A3;text-transform:uppercase;letter-spacing:.07em;">SAM.gov</td><td style="padding:13px 28px;"><span style="background:#D1FAE5;color:#065F46;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;">Active</span></td></tr>
           <tr style="border-bottom:1px solid #F0F2F5;background:#FAFBFC;"><td style="padding:13px 28px;font-size:12px;font-weight:700;color:#8A95A3;text-transform:uppercase;letter-spacing:.07em;">SDVOSB</td><td style="padding:13px 28px;font-size:14px;color:#1C2B3A;">SBA Certified</td></tr>
           <tr style="border-bottom:1px solid #F0F2F5;"><td style="padding:13px 28px;font-size:12px;font-weight:700;color:#8A95A3;text-transform:uppercase;letter-spacing:.07em;">State</td><td style="padding:13px 28px;font-size:14px;color:#1C2B3A;">Florida LLC</td></tr>
-          <tr style="background:#FAFBFC;"><td style="padding:13px 28px;font-size:12px;font-weight:700;color:#8A95A3;text-transform:uppercase;letter-spacing:.07em;">Contact</td><td style="padding:13px 28px;"><a href="tel:+17036721844" style="font-size:14px;font-weight:700;color:#071A33;display:block;transition:color .15s;" data-hover="color:#B22234;">(703) 672-1844</a><a href="mailto:John@usgovtservices.com" style="font-size:13px;color:#8A95A3;transition:color .15s;" data-hover="color:#B22234;">John@usgovtservices.com</a></td></tr>
+          <tr style="background:#FAFBFC;"><td style="padding:13px 28px;font-size:12px;font-weight:700;color:#8A95A3;text-transform:uppercase;letter-spacing:.07em;">Contact</td><td style="padding:13px 28px;"><a href="tel:+17034098785" style="font-size:14px;font-weight:700;color:#071A33;display:block;transition:color .15s;" data-hover="color:#B22234;">(703) 409-8785</a><a href="mailto:john@usgovtservices.com" style="font-size:13px;color:#8A95A3;transition:color .15s;" data-hover="color:#B22234;">john@usgovtservices.com</a></td></tr>
         </table>
       </div>
     </div>
@@ -230,13 +228,13 @@
       <h2 style="font-size:44px;color:#fff;font-weight:700;margin-bottom:16px;line-height:1.1;text-wrap:pretty;">Ready to put a verified, veteran-owned partner on your next requirement?</h2>
       <p style="font-size:17px;color:rgba(255,255,255,.5);max-width:520px;line-height:1.72;margin-bottom:40px;font-weight:300;">Request a capability briefing — we'll show you exactly how we fit your NAICS, your timeline, and your small-business goals. We respond within 24 hours.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px;">
-        <a href="mailto:John@usgovtservices.com?subject=USGS%20Capability%20Briefing%20Request" style="background:#B22234;color:#fff;font-size:15px;font-weight:600;padding:15px 28px;border-radius:5px;transition:all .2s;" data-hover="background:#9B1D2B;transform:translateY(-2px);">Request a Capability Briefing</a>
+        <a href="mailto:john@usgovtservices.com?subject=USGS%20Capability%20Briefing%20Request" style="background:#B22234;color:#fff;font-size:15px;font-weight:600;padding:15px 28px;border-radius:5px;transition:all .2s;" data-hover="background:#9B1D2B;transform:translateY(-2px);">Request a Capability Briefing</a>
         <a href="capability-statement.html" style="color:rgba(255,255,255,.75);font-size:15px;font-weight:500;padding:15px 28px;border-radius:5px;border:1.5px solid rgba(255,255,255,.16);transition:all .2s;" data-hover="border-color:rgba(255,255,255,.45);color:#fff;">Download Capability Statement</a>
       </div>
       <div style="font-size:14px;color:rgba(255,255,255,.38);">
-        <a href="tel:+17036721844" style="color:rgba(255,255,255,.65);font-weight:600;transition:color .15s;" data-hover="color:#fff;">(703) 672-1844</a>
+        <a href="tel:+17034098785" style="color:rgba(255,255,255,.65);font-weight:600;transition:color .15s;" data-hover="color:#fff;">(703) 409-8785</a>
         <span style="margin:0 10px;color:rgba(255,255,255,.15);">·</span>
-        <a href="mailto:John@usgovtservices.com" style="color:rgba(255,255,255,.65);font-weight:600;transition:color .15s;" data-hover="color:#fff;">John@usgovtservices.com</a>
+        <a href="mailto:john@usgovtservices.com" style="color:rgba(255,255,255,.65);font-weight:600;transition:color .15s;" data-hover="color:#fff;">john@usgovtservices.com</a>
         <span style="margin:0 10px;color:rgba(255,255,255,.15);">·</span>
         <span>McLean, VA</span>
       </div>
@@ -267,8 +265,8 @@
       </div>
       <div>
         <h4 style="font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:16px;">Contact</h4>
-        <a href="tel:+17036721844" style="display:block;font-size:13px;color:rgba(255,255,255,.48);margin-bottom:8px;transition:color .15s;" data-hover="color:#fff;">(703) 672-1844</a>
-        <a href="mailto:John@usgovtservices.com" style="display:block;font-size:13px;color:rgba(255,255,255,.48);margin-bottom:18px;transition:color .15s;" data-hover="color:#fff;">John@usgovtservices.com</a>
+        <a href="tel:+17034098785" style="display:block;font-size:13px;color:rgba(255,255,255,.48);margin-bottom:8px;transition:color .15s;" data-hover="color:#fff;">(703) 409-8785</a>
+        <a href="mailto:john@usgovtservices.com" style="display:block;font-size:13px;color:rgba(255,255,255,.48);margin-bottom:18px;transition:color .15s;" data-hover="color:#fff;">john@usgovtservices.com</a>
         <a href="accessibility.html" style="display:block;font-size:11.5px;color:rgba(255,255,255,.25);margin-bottom:6px;transition:color .15s;" data-hover="color:rgba(255,255,255,.62);">Accessibility (508)</a>
         <a href="privacy.html" style="display:block;font-size:11.5px;color:rgba(255,255,255,.25);margin-bottom:6px;transition:color .15s;" data-hover="color:rgba(255,255,255,.62);">Privacy Policy</a>
         <a href="terms.html" style="display:block;font-size:11.5px;color:rgba(255,255,255,.25);transition:color .15s;" data-hover="color:rgba(255,255,255,.62);">Terms of Use</a>
@@ -280,17 +278,11 @@
   </div>
 </footer>
 <script>
-// Handle data-hover (style-hover) for interactive elements
-document.querySelectorAll('[data-hover]').forEach(function(el) {
-  var base = el.getAttribute('style') || '';
-  var hover = el.getAttribute('data-hover') || '';
-  el.addEventListener('mouseenter', function() {
-    var combined = base + ';' + hover;
-    el.setAttribute('style', combined);
-  });
-  el.addEventListener('mouseleave', function() {
-    el.setAttribute('style', base);
-  });
+document.querySelectorAll('[data-hover]').forEach(function(el){
+  var base=el.getAttribute('style')||'';
+  var hover=el.getAttribute('data-hover')||'';
+  el.addEventListener('mouseenter',function(){el.setAttribute('style',base+';'+hover);});
+  el.addEventListener('mouseleave',function(){el.setAttribute('style',base);});
 });
 </script>
 </body>
