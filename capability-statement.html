@@ -22,7 +22,9 @@
       h1, h2, h3, h4 { color: #0A2240 !important; }
     }
   </style>
-<style>[data-hover]{transition:all .18s ease;}</style>
+<style>
+  [data-hover] { transition: all .18s ease; }
+</style>
 </head>
 <body>
 <div class="no-print" style="height:5px;background:#B22234;width:100%;"></div>
@@ -188,11 +190,17 @@
   </div>
 </footer>
 <script>
-document.querySelectorAll('[data-hover]').forEach(function(el){
-  var base=el.getAttribute('style')||'';
-  var hover=el.getAttribute('data-hover')||'';
-  el.addEventListener('mouseenter',function(){el.setAttribute('style',base+';'+hover);});
-  el.addEventListener('mouseleave',function(){el.setAttribute('style',base);});
+// Handle data-hover (style-hover) for interactive elements
+document.querySelectorAll('[data-hover]').forEach(function(el) {
+  var base = el.getAttribute('style') || '';
+  var hover = el.getAttribute('data-hover') || '';
+  el.addEventListener('mouseenter', function() {
+    var combined = base + ';' + hover;
+    el.setAttribute('style', combined);
+  });
+  el.addEventListener('mouseleave', function() {
+    el.setAttribute('style', base);
+  });
 });
 </script>
 </body>
