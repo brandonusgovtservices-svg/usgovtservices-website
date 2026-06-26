@@ -22,26 +22,28 @@
       h1, h2, h3, h4 { color: #0A2240 !important; }
     }
   </style>
-<style>[data-hover]{transition:all .18s ease;}</style>
 </head>
 <body>
-<div class="no-print" style="height:5px;background:#B22234;width:100%;"></div>
-
 <!-- HEADER (hidden on print) -->
-<header class="no-print" style="position:sticky;top:0;z-index:100;background:rgba(7,26,51,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.07);">
-  <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;">
-    <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0;">
-      <span style="background:#fff;border-radius:7px;padding:5px 6px;display:inline-flex;line-height:0;">
-        <svg width="28" height="32" viewBox="0 0 100 112" role="img" aria-label="USGS shield"><defs><clipPath id="sh-csh"><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z"/></clipPath></defs><g clip-path="url(#sh-csh)"><rect width="100" height="112" fill="#fff"/><rect x="0" y="42" width="14.3" height="70" fill="#B22234"/><rect x="28.6" y="42" width="14.3" height="70" fill="#B22234"/><rect x="57.2" y="42" width="14.3" height="70" fill="#B22234"/><rect x="85.8" y="42" width="14.3" height="70" fill="#B22234"/><rect width="100" height="44" fill="#0A2240"/><polygon fill="#fff" points="50,12 52.8,20.1 61.4,20.3 54.6,25.5 57.1,33.7 50,28.8 42.9,33.7 45.4,25.5 38.6,20.3 47.2,20.1"/></g><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z" fill="none" stroke="#0A2240" stroke-width="3"/></svg>
+<header class="no-print" style="position:sticky;top:0;z-index:200;height:64px;display:flex;align-items:center;background:rgba(5,16,33,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);">
+  <div style="width:100%;max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+      <span style="background:#fff;border-radius:6px;padding:4px 5px;line-height:0;display:inline-flex;flex-shrink:0;">
+        <svg width="22" height="25" viewBox="0 0 100 112" role="img" aria-label="USGS shield"><defs><clipPath id="sh-nav-cs"><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z"/></clipPath></defs><g clip-path="url(#sh-nav-cs)"><rect width="100" height="112" fill="#fff"/><rect x="0" y="42" width="14.3" height="70" fill="#B22234"/><rect x="28.6" y="42" width="14.3" height="70" fill="#B22234"/><rect x="57.2" y="42" width="14.3" height="70" fill="#B22234"/><rect x="85.8" y="42" width="14.3" height="70" fill="#B22234"/><rect width="100" height="44" fill="#071A33"/><polygon fill="#fff" points="50,12 52.8,20.1 61.4,20.3 54.6,25.5 57.1,33.7 50,28.8 42.9,33.7 45.4,25.5 38.6,20.3 47.2,20.1"/></g><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z" fill="none" stroke="#071A33" stroke-width="3"/></svg>
       </span>
-      <span style="font-family:'Spectral',Georgia,serif;color:#fff;font-size:17px;font-weight:700;letter-spacing:.01em;line-height:1.2;">US GOVERNMENT <span style="border-bottom:3px solid #B22234;padding-bottom:1px;">SERVICES</span></span>
+      <div style="line-height:1.2;">
+        <div style="font-family:'Spectral',serif;font-size:15px;font-weight:700;color:#fff;">US Government Services</div>
+        <div style="font-size:10px;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase;">IT Division · McLean, VA</div>
+      </div>
     </a>
-    <nav style="display:flex;gap:28px;align-items:center;">
-      <a href="index.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" data-hover="color:#fff;">Home</a>
-      <a href="about.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" data-hover="color:#fff;">About &amp; Services</a>
-      <a href="federal-buyers.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" data-hover="color:#fff;">Federal Buyers</a>
-      <a href="capability-statement.html" style="color:#fff;font-size:14px;font-weight:600;border-bottom:2px solid #B22234;padding-bottom:2px;">Capability Statement</a>
-      <a href="Index.dc.html#contact" style="background:#B22234;color:#fff;font-size:13.5px;font-weight:600;padding:8px 18px;border-radius:6px;transition:all .18s;" data-hover="background:#8E1B2C;">Request a Briefing</a>
+    <nav style="display:flex;align-items:center;gap:28px;">
+      <a href="index.html" style="font-size:13.5px;font-weight:500;color:rgba(255,255,255,.65);transition:color .15s;" style-hover="color:#fff;">Home</a>
+      <a href="about.html" style="font-size:13.5px;font-weight:500;color:rgba(255,255,255,.65);transition:color .15s;" style-hover="color:#fff;">About &amp; Services</a>
+      <a href="federal-buyers.html" style="font-size:13.5px;font-weight:500;color:rgba(255,255,255,.65);transition:color .15s;" style-hover="color:#fff;">Federal Buyers</a>
+      <a href="capability-statement.html" style="font-size:13.5px;font-weight:600;color:#fff;border-bottom:2px solid #B22234;padding-bottom:2px;">Capability Statement</a>
+      <span style="width:1px;height:20px;background:rgba(255,255,255,.12);display:block;flex-shrink:0;"></span>
+      <a href="construction.html" style="font-size:12.5px;font-weight:700;color:#C87D0F;transition:color .15s;" style-hover="color:#E8A030;">Construction →</a>
+      <a href="index.html#contact" style="background:#B22234;color:#fff;font-size:13px;font-weight:600;padding:9px 20px;border-radius:5px;transition:background .15s;" style-hover="background:#9B1D2B;">Request a Briefing</a>
     </nav>
   </div>
 </header>
@@ -49,7 +51,7 @@
 <!-- PRINT BAR (hidden on print) -->
 <div class="no-print" style="background:#F5F6F8;border-bottom:1px solid #E2E5EA;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:16px;">
   <span style="font-size:14px;color:#3F4A5C;">This is the one-page federal capability statement. Use your browser's Print dialog → <strong>Save as PDF</strong> to download.</span>
-  <button onclick="window.print()" style="background:#B22234;color:#fff;border:none;font-weight:700;padding:9px 20px;border-radius:6px;font-family:'Public Sans',sans-serif;font-size:14px;cursor:pointer;transition:background .18s;" data-hover="background:#8E1B2C;">Print / Save as PDF</button>
+  <button onclick="window.print()" style="background:#B22234;color:#fff;border:none;font-weight:700;padding:9px 20px;border-radius:6px;font-family:'Public Sans',sans-serif;font-size:14px;cursor:pointer;transition:background .18s;" style-hover="background:#8E1B2C;">Print / Save as PDF</button>
 </div>
 
 <!-- CAPABILITY STATEMENT PAGE -->
@@ -149,7 +151,7 @@
         <div style="font-size:13.5px;line-height:1.85;color:#3F4A5C;">
           <strong style="color:#0A2240;">LTC John Michael Stacy, USA (Ret.)</strong><br>
           Managing Member &amp; Chief Executive Officer<br>
-          <strong style="color:#0A2240;">Phone:</strong> (703) 409-8785<br>
+          <strong style="color:#0A2240;">Phone:</strong> (571) 528-8760<br>
           <strong style="color:#0A2240;">Email:</strong> john@usgovtservices.com<br>
           <strong style="color:#0A2240;">Location:</strong> McLean, VA 22102
         </div>
@@ -164,9 +166,38 @@
     </div>
   </div>
 
+  <!-- Construction Division block -->
+  <div style="margin-top:28px;border-top:2px solid #E2E5EA;padding-top:22px;">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+      <div style="width:10px;height:10px;background:#C87D0F;border-radius:2px;flex-shrink:0;"></div>
+      <h2 style="font-family:'Spectral',Georgia,serif;font-size:14px;color:#0A2240;text-transform:uppercase;letter-spacing:.07em;font-weight:700;">Construction Division</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1.45fr 1fr;gap:36px;">
+      <div>
+        <p style="font-size:13px;line-height:1.65;color:#3F4A5C;margin-bottom:12px;">US Government Services LLC operates a Construction Division serving federal agencies under 14 specialty trade NAICS codes (238xxx series). The same UEI, CAGE, and SDVOSB certification govern all construction work — no separate registration required.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+          <div style="display:flex;gap:6px;font-size:12.5px;color:#3F4A5C;"><span style="color:#C87D0F;font-weight:700;flex-shrink:0;">▪</span><span><strong style="color:#0A2240;">Electrical</strong> — NAICS 238210</span></div>
+          <div style="display:flex;gap:6px;font-size:12.5px;color:#3F4A5C;"><span style="color:#C87D0F;font-weight:700;flex-shrink:0;">▪</span><span><strong style="color:#0A2240;">Plumbing &amp; HVAC</strong> — 238220</span></div>
+          <div style="display:flex;gap:6px;font-size:12.5px;color:#3F4A5C;"><span style="color:#C87D0F;font-weight:700;flex-shrink:0;">▪</span><span><strong style="color:#0A2240;">Roofing</strong> — NAICS 238160</span></div>
+          <div style="display:flex;gap:6px;font-size:12.5px;color:#3F4A5C;"><span style="color:#C87D0F;font-weight:700;flex-shrink:0;">▪</span><span><strong style="color:#0A2240;">Site Preparation</strong> — 238910</span></div>
+          <div style="display:flex;gap:6px;font-size:12.5px;color:#3F4A5C;"><span style="color:#C87D0F;font-weight:700;flex-shrink:0;">▪</span><span><strong style="color:#0A2240;">Masonry</strong> — NAICS 238140</span></div>
+          <div style="display:flex;gap:6px;font-size:12.5px;color:#3F4A5C;"><span style="color:#C87D0F;font-weight:700;flex-shrink:0;">▪</span><span>+ 9 additional 238xxx codes</span></div>
+        </div>
+      </div>
+      <div style="font-size:13px;line-height:1.85;color:#3F4A5C;">
+        <strong style="color:#0A2240;">Division:</strong> Construction<br>
+        <strong style="color:#0A2240;">UEI / CAGE:</strong> Same as IT Division<br>
+        <strong style="color:#0A2240;">NAICS Count:</strong> 14 codes (238 series)<br>
+        <strong style="color:#0A2240;">Primary:</strong> Electrical, HVAC, Roofing<br>
+        <strong style="color:#0A2240;">Certifications:</strong> SDVOSB · SBA #94113<br>
+        <strong style="color:#0A2240;">Sole-Source Limit:</strong> Up to $5M (FAR 19.1406)
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <div style="margin-top:28px;border-top:1px solid #E2E5EA;padding-top:16px;font-size:12px;color:#6B7688;text-align:center;line-height:1.7;">
-    US Government Services LLC · McLean, VA · (703) 409-8785 · john@usgovtservices.com · UEI YR6VHSXZB3X4 · CAGE 1ZQW4 · SDVOSB · SBA Cert. #94113
+    US Government Services LLC · IT &amp; Construction Divisions · McLean, VA · (571) 528-8760 · john@usgovtservices.com · UEI YR6VHSXZB3X4 · CAGE 1ZQW4 · SDVOSB · SBA Cert. #94113
   </div>
 
 </div>
@@ -176,23 +207,45 @@
   <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 24px;">
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:24px;">
       <div style="display:flex;gap:24px;flex-wrap:wrap;">
-        <a href="index.html" style="color:rgba(255,255,255,.6);font-size:14px;" data-hover="color:#fff;">Home</a>
-        <a href="about.html" style="color:rgba(255,255,255,.6);font-size:14px;" data-hover="color:#fff;">About &amp; Services</a>
-        <a href="federal-buyers.html" style="color:rgba(255,255,255,.6);font-size:14px;" data-hover="color:#fff;">Federal Buyers</a>
+        <a href="index.html" style="color:rgba(255,255,255,.6);font-size:14px;" style-hover="color:#fff;">Home</a>
+        <a href="about.html" style="color:rgba(255,255,255,.6);font-size:14px;" style-hover="color:#fff;">About &amp; Services</a>
+        <a href="federal-buyers.html" style="color:rgba(255,255,255,.6);font-size:14px;" style-hover="color:#fff;">Federal Buyers</a>
       </div>
       <div style="font-size:13.5px;color:rgba(255,255,255,.6);">
-        <a href="tel:+17034098785" style="color:#fff;font-weight:600;">(703) 409-8785</a> &nbsp;·&nbsp; <a href="mailto:john@usgovtservices.com" style="color:#fff;font-weight:600;">john@usgovtservices.com</a>
+        <a href="tel:+15715288760" style="color:#fff;font-weight:600;">(571) 528-8760</a> &nbsp;·&nbsp; <a href="mailto:john@usgovtservices.com" style="color:#fff;font-weight:600;">john@usgovtservices.com</a>
       </div>
     </div>
     <div style="border-top:1px solid rgba(255,255,255,.09);padding-top:20px;font-size:12px;color:rgba(255,255,255,.38);text-align:center;">© 2026 US Government Services LLC · UEI YR6VHSXZB3X4 · CAGE 1ZQW4 · SDVOSB · SBA Cert. #94113</div>
   </div>
 </footer>
 <script>
-document.querySelectorAll('[data-hover]').forEach(function(el){
-  var base=el.getAttribute('style')||'';
-  var hover=el.getAttribute('data-hover')||'';
-  el.addEventListener('mouseenter',function(){el.setAttribute('style',base+';'+hover);});
-  el.addEventListener('mouseleave',function(){el.setAttribute('style',base);});
+document.addEventListener('DOMContentLoaded',function(){
+  function applyStyleAttr(el,attr){
+    var s=el.getAttribute(attr);
+    if(!s)return;
+    s.split(';').forEach(function(r){
+      var p=r.indexOf(':');
+      if(p<0)return;
+      var k=r.slice(0,p).trim().replace(/-([a-z])/g,function(_,c){return c.toUpperCase();});
+      var v=r.slice(p+1).trim();
+      if(k&&v)el.style[k]=v;
+    });
+  }
+  document.querySelectorAll('[style-hover]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('mouseenter',function(){applyStyleAttr(el,'style-hover');});
+    el.addEventListener('mouseleave',function(){el.setAttribute('style',orig);});
+  });
+  document.querySelectorAll('[style-active]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('mousedown',function(){applyStyleAttr(el,'style-active');});
+    el.addEventListener('mouseup',function(){el.setAttribute('style',orig);});
+  });
+  document.querySelectorAll('[style-focus]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('focus',function(){applyStyleAttr(el,'style-focus');});
+    el.addEventListener('blur',function(){el.setAttribute('style',orig);});
+  });
 });
 </script>
 </body>

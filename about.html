@@ -19,26 +19,28 @@
     img { max-width: 100%; display: block; }
     @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   </style>
-<style>[data-hover]{transition:all .18s ease;}</style>
 </head>
 <body>
-<div style="height:5px;background:#B22234;width:100%;"></div>
-
 <!-- HEADER -->
-<header style="position:sticky;top:0;z-index:100;background:rgba(7,26,51,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.07);">
-  <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;">
-    <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0;">
-      <span style="background:#fff;border-radius:7px;padding:5px 6px;display:inline-flex;line-height:0;">
-        <svg width="28" height="32" viewBox="0 0 100 112" role="img" aria-label="USGS shield"><defs><clipPath id="sh-ah"><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z"/></clipPath></defs><g clip-path="url(#sh-ah)"><rect width="100" height="112" fill="#fff"/><rect x="0" y="42" width="14.3" height="70" fill="#B22234"/><rect x="28.6" y="42" width="14.3" height="70" fill="#B22234"/><rect x="57.2" y="42" width="14.3" height="70" fill="#B22234"/><rect x="85.8" y="42" width="14.3" height="70" fill="#B22234"/><rect width="100" height="44" fill="#0A2240"/><polygon fill="#fff" points="50,12 52.8,20.1 61.4,20.3 54.6,25.5 57.1,33.7 50,28.8 42.9,33.7 45.4,25.5 38.6,20.3 47.2,20.1"/></g><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z" fill="none" stroke="#0A2240" stroke-width="3"/></svg>
+<header style="position:sticky;top:0;z-index:200;height:64px;display:flex;align-items:center;background:rgba(5,16,33,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);">
+  <div style="width:100%;max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+      <span style="background:#fff;border-radius:6px;padding:4px 5px;line-height:0;display:inline-flex;flex-shrink:0;">
+        <svg width="22" height="25" viewBox="0 0 100 112" role="img" aria-label="USGS shield"><defs><clipPath id="sh-nav-ab"><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z"/></clipPath></defs><g clip-path="url(#sh-nav-ab)"><rect width="100" height="112" fill="#fff"/><rect x="0" y="42" width="14.3" height="70" fill="#B22234"/><rect x="28.6" y="42" width="14.3" height="70" fill="#B22234"/><rect x="57.2" y="42" width="14.3" height="70" fill="#B22234"/><rect x="85.8" y="42" width="14.3" height="70" fill="#B22234"/><rect width="100" height="44" fill="#071A33"/><polygon fill="#fff" points="50,12 52.8,20.1 61.4,20.3 54.6,25.5 57.1,33.7 50,28.8 42.9,33.7 45.4,25.5 38.6,20.3 47.2,20.1"/></g><path d="M50 4 L92 18 V52 C92 82 73 100 50 110 C27 100 8 82 8 52 V18 Z" fill="none" stroke="#071A33" stroke-width="3"/></svg>
       </span>
-      <span style="font-family:'Spectral',Georgia,serif;color:#fff;font-size:17px;font-weight:700;letter-spacing:.01em;line-height:1.2;">US GOVERNMENT <span style="border-bottom:3px solid #B22234;padding-bottom:1px;">SERVICES</span></span>
+      <div style="line-height:1.2;">
+        <div style="font-family:'Spectral',serif;font-size:15px;font-weight:700;color:#fff;">US Government Services</div>
+        <div style="font-size:10px;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase;">IT Division · McLean, VA</div>
+      </div>
     </a>
-    <nav style="display:flex;gap:28px;align-items:center;">
-      <a href="index.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;transition:color .15s;" data-hover="color:#fff;">Home</a>
-      <a href="about.html" style="color:#fff;font-size:14px;font-weight:600;border-bottom:2px solid #B22234;padding-bottom:2px;">About &amp; Services</a>
-      <a href="federal-buyers.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;transition:color .15s;" data-hover="color:#fff;">Federal Buyers</a>
-      <a href="capability-statement.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;transition:color .15s;" data-hover="color:#fff;">Capability Statement</a>
-      <a href="Index.dc.html#contact" style="background:#B22234;color:#fff;font-size:13.5px;font-weight:600;padding:8px 18px;border-radius:6px;transition:all .18s;" data-hover="background:#8E1B2C;">Request a Briefing</a>
+    <nav style="display:flex;align-items:center;gap:28px;">
+      <a href="index.html" style="font-size:13.5px;font-weight:500;color:rgba(255,255,255,.65);transition:color .15s;" style-hover="color:#fff;">Home</a>
+      <a href="about.html" style="font-size:13.5px;font-weight:600;color:#fff;border-bottom:2px solid #B22234;padding-bottom:2px;">About &amp; Services</a>
+      <a href="federal-buyers.html" style="font-size:13.5px;font-weight:500;color:rgba(255,255,255,.65);transition:color .15s;" style-hover="color:#fff;">Federal Buyers</a>
+      <a href="capability-statement.html" style="font-size:13.5px;font-weight:500;color:rgba(255,255,255,.65);transition:color .15s;" style-hover="color:#fff;">Capability Statement</a>
+      <span style="width:1px;height:20px;background:rgba(255,255,255,.12);display:block;flex-shrink:0;"></span>
+      <a href="construction.html" style="font-size:12.5px;font-weight:700;color:#C87D0F;transition:color .15s;" style-hover="color:#E8A030;">Construction →</a>
+      <a href="index.html#contact" style="background:#B22234;color:#fff;font-size:13px;font-weight:600;padding:9px 20px;border-radius:5px;transition:background .15s;" style-hover="background:#9B1D2B;">Request a Briefing</a>
     </nav>
   </div>
 </header>
@@ -93,27 +95,27 @@
     <div style="text-align:center;margin-bottom:48px;">
       <div style="font-size:11.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#B22234;margin-bottom:10px;">Legacy of Service</div>
       <h2 style="font-size:34px;color:#0A2240;margin-bottom:12px;">Six decades of service to the United States</h2>
-      <p style="color:#6B7688;font-size:17px;max-width:580px;margin:0 auto;">Drop in historic photographs to bring this gallery to life — a story your competitors cannot copy.</p>
+      <p style="color:#6B7688;font-size:17px;max-width:580px;margin:0 auto;">A visual record of six decades of service — Vietnam combat aviation, Army command, and federal contracting leadership.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;">
       <div style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 4px 16px rgba(10,34,64,.1);">
-        <div id="legacy-01" style="width:100%;height:100%;min-height:480px;background:#12253b;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:14px;text-align:center;padding:24px;cursor:pointer;" onclick="this.querySelector('input').click()"><input type="file" accept="image/*" style="display:none" onchange="var r=new FileReader();r.onload=function(e){var p=this.parentElement;p.style.backgroundImage='url('+e.target.result+')';p.style.backgroundSize='cover';p.style.backgroundPosition='center top';p.style.color='transparent';p.querySelector('input').style.display='none';};r.readAsDataURL(this.files[0]);"><span>📷 Click to add photo<br><small style="opacity:.6">Vietnam 1968</small></span></div>
+        <image-slot id="legacy-01" shape="rect" placeholder="Vietnam 1968" style="width:100%;height:260px;display:block;filter:sepia(28%) saturate(135%) hue-rotate(358deg) brightness(1.04);"></image-slot>
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(7,26,51,.88));padding:20px 10px 10px;pointer-events:none;font-size:12px;color:#fff;line-height:1.4;">1968 — 220th RAC, Vietnam</div>
       </div>
       <div style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 4px 16px rgba(10,34,64,.1);">
-        <div id="legacy-02" style="width:100%;height:100%;min-height:480px;background:#12253b;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:14px;text-align:center;padding:24px;cursor:pointer;" onclick="this.querySelector('input').click()"><input type="file" accept="image/*" style="display:none" onchange="var r=new FileReader();r.onload=function(e){var p=this.parentElement;p.style.backgroundImage='url('+e.target.result+')';p.style.backgroundSize='cover';p.style.backgroundPosition='center top';p.style.color='transparent';p.querySelector('input').style.display='none';};r.readAsDataURL(this.files[0]);"><span>📷 Click to add photo<br><small style="opacity:.6">Army Aviator</small></span></div>
+        <image-slot id="legacy-02" shape="rect" placeholder="Army Aviator" style="width:100%;height:260px;display:block;filter:sepia(28%) saturate(135%) hue-rotate(358deg) brightness(1.04);"></image-slot>
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(7,26,51,.88));padding:20px 10px 10px;pointer-events:none;font-size:12px;color:#fff;line-height:1.4;">Army Aviator</div>
       </div>
       <div style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 4px 16px rgba(10,34,64,.1);">
-        <div id="legacy-03" style="width:100%;height:100%;min-height:480px;background:#12253b;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:14px;text-align:center;padding:24px;cursor:pointer;" onclick="this.querySelector('input').click()"><input type="file" accept="image/*" style="display:none" onchange="var r=new FileReader();r.onload=function(e){var p=this.parentElement;p.style.backgroundImage='url('+e.target.result+')';p.style.backgroundSize='cover';p.style.backgroundPosition='center top';p.style.color='transparent';p.querySelector('input').style.display='none';};r.readAsDataURL(this.files[0]);"><span>📷 Click to add photo<br><small style="opacity:.6">LTC Portrait</small></span></div>
+        <image-slot id="legacy-03" shape="rect" placeholder="LTC Portrait" style="width:100%;height:260px;display:block;filter:sepia(28%) saturate(135%) hue-rotate(358deg) brightness(1.04);"></image-slot>
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(7,26,51,.88));padding:20px 10px 10px;pointer-events:none;font-size:12px;color:#fff;line-height:1.4;">Lieutenant Colonel</div>
       </div>
       <div style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 4px 16px rgba(10,34,64,.1);">
-        <div id="legacy-04" style="width:100%;height:100%;min-height:480px;background:#12253b;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:14px;text-align:center;padding:24px;cursor:pointer;" onclick="this.querySelector('input').click()"><input type="file" accept="image/*" style="display:none" onchange="var r=new FileReader();r.onload=function(e){var p=this.parentElement;p.style.backgroundImage='url('+e.target.result+')';p.style.backgroundSize='cover';p.style.backgroundPosition='center top';p.style.color='transparent';p.querySelector('input').style.display='none';};r.readAsDataURL(this.files[0]);"><span>📷 Click to add photo<br><small style="opacity:.6">Award Ceremony</small></span></div>
+        <image-slot id="legacy-04" shape="rect" placeholder="Award Ceremony" style="width:100%;height:260px;display:block;filter:sepia(28%) saturate(135%) hue-rotate(358deg) brightness(1.04);"></image-slot>
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(7,26,51,.88));padding:20px 10px 10px;pointer-events:none;font-size:12px;color:#fff;line-height:1.4;">Decoration for Service</div>
       </div>
       <div style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 4px 16px rgba(10,34,64,.1);">
-        <div id="legacy-05" style="width:100%;height:100%;min-height:480px;background:#12253b;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:14px;text-align:center;padding:24px;cursor:pointer;" onclick="this.querySelector('input').click()"><input type="file" accept="image/*" style="display:none" onchange="var r=new FileReader();r.onload=function(e){var p=this.parentElement;p.style.backgroundImage='url('+e.target.result+')';p.style.backgroundSize='cover';p.style.backgroundPosition='center top';p.style.color='transparent';p.querySelector('input').style.display='none';};r.readAsDataURL(this.files[0]);"><span>📷 Click to add photo<br><small style="opacity:.6">Promotion · Family</small></span></div>
+        <image-slot id="legacy-05" shape="rect" placeholder="Promotion · Family" style="width:100%;height:260px;display:block;filter:sepia(28%) saturate(135%) hue-rotate(358deg) brightness(1.04);"></image-slot>
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(7,26,51,.88));padding:20px 10px 10px;pointer-events:none;font-size:12px;color:#fff;line-height:1.4;">Promotion · With Family</div>
       </div>
     </div>
@@ -170,17 +172,17 @@
       <p style="color:#6B7688;font-size:18px;line-height:1.6;">Most small federal IT firms offer one or the other. We were founded on both.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-      <div style="background:#F5F6F8;border:1px solid #E2E5EA;border-top:4px solid #B22234;border-radius:8px;padding:36px 28px;transition:all .25s;" data-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,34,64,.11);">
+      <div style="background:#F5F6F8;border:1px solid #E2E5EA;border-top:4px solid #B22234;border-radius:8px;padding:36px 28px;transition:all .25s;" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,34,64,.11);">
         <div style="font-size:28px;margin-bottom:16px;">★</div>
         <h3 style="font-size:19px;color:#0A2240;margin-bottom:10px;line-height:1.25;">SDVOSB sole-source authority</h3>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;">Certified SDVOSB — eligible for sole-source awards up to $5M in services under FAR 19.1406.</p>
       </div>
-      <div style="background:#F5F6F8;border:1px solid #E2E5EA;border-top:4px solid #B22234;border-radius:8px;padding:36px 28px;transition:all .25s;" data-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,34,64,.11);">
+      <div style="background:#F5F6F8;border:1px solid #E2E5EA;border-top:4px solid #B22234;border-radius:8px;padding:36px 28px;transition:all .25s;" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,34,64,.11);">
         <div style="font-size:28px;margin-bottom:16px;">★</div>
         <h3 style="font-size:19px;color:#0A2240;margin-bottom:10px;line-height:1.25;">VA Veterans First eligible</h3>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;">As a certified SDVOSB, we qualify for VA "Veterans First" priority (38 U.S.C. § 8127), with sole-source services awards up to $5M under VAAR 819.7008.</p>
       </div>
-      <div style="background:#F5F6F8;border:1px solid #E2E5EA;border-top:4px solid #B22234;border-radius:8px;padding:36px 28px;transition:all .25s;" data-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,34,64,.11);">
+      <div style="background:#F5F6F8;border:1px solid #E2E5EA;border-top:4px solid #B22234;border-radius:8px;padding:36px 28px;transition:all .25s;" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,34,64,.11);">
         <div style="font-size:28px;margin-bottom:16px;">★</div>
         <h3 style="font-size:19px;color:#0A2240;margin-bottom:10px;line-height:1.25;">DCAA-compliant accounting on day one</h3>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;">Our Deltek Costpoint implementation supports cost-type and T&amp;M work that most new firms cannot accept — audit-ready before you ask.</p>
@@ -198,47 +200,47 @@
       <p style="color:#6B7688;font-size:18px;line-height:1.6;">Each mapped to a federal NAICS code, so a contracting officer can match us to a solicitation in seconds.</p>
     </div>
     <div style="display:grid;gap:20px;">
-      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" data-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
+      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" style-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
         <div style="font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6B7688;margin-bottom:8px;">Service 1 · NAICS 541611 · 541618 · 541690</div>
         <h3 style="font-size:24px;color:#0A2240;margin-bottom:12px;">IT Consulting &amp; Management</h3>
         <p style="color:#3F4A5C;font-size:16px;line-height:1.7;margin-bottom:14px;">CIO advisory, program management, AI strategy, federal training, and the disciplined leadership that complex programs need. We support agencies and their primes from strategy through delivery.</p>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;margin-bottom:20px;"><strong style="color:#0A2240;">Best for:</strong> Programs that need senior-level federal IT leadership for a defined engagement, an AI roadmap, or a steady hand on program management. <strong style="color:#0A2240;">You get:</strong> Senior advisory backed by a founder with thirty years of federal experience.</p>
-        <a href="Index.dc.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" data-hover="background:#071A33;transform:translateY(-1px);">Book a Consulting Conversation →</a>
+        <a href="index.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" style-hover="background:#071A33;transform:translateY(-1px);">Book a Consulting Conversation →</a>
       </div>
-      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" data-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
+      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" style-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
         <div style="font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6B7688;margin-bottom:8px;">Service 2 · NAICS 561320</div>
         <h3 style="font-size:24px;color:#0A2240;margin-bottom:12px;">IT Staffing &amp; Staff Augmentation</h3>
         <p style="color:#3F4A5C;font-size:16px;line-height:1.7;margin-bottom:14px;">We supply skilled IT professionals to fill your team's gaps fast — for a single role, a full project team, or a short-term surge. They work under your direction, on your schedule, and we recruit aggressively for cleared candidates.</p>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;margin-bottom:20px;"><strong style="color:#0A2240;">Best for:</strong> Agencies facing hiring freezes, tight deadlines, or a sudden spike in workload. <strong style="color:#0A2240;">You get:</strong> The right people on the work in days instead of months.</p>
-        <a href="Index.dc.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" data-hover="background:#071A33;transform:translateY(-1px);">Send Us the Roles You Need Filled →</a>
+        <a href="index.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" style-hover="background:#071A33;transform:translateY(-1px);">Send Us the Roles You Need Filled →</a>
       </div>
-      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" data-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
+      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" style-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
         <div style="font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6B7688;margin-bottom:8px;">Service 3 · NAICS 541511</div>
         <h3 style="font-size:24px;color:#0A2240;margin-bottom:12px;">Custom Software &amp; AI Development</h3>
         <p style="color:#3F4A5C;font-size:16px;line-height:1.7;margin-bottom:14px;">We build the software your mission needs and put artificial intelligence to work inside it — secure federal applications, automation that removes manual busywork, and AI tools that help your people make faster, better-informed decisions.</p>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;margin-bottom:20px;"><strong style="color:#0A2240;">Best for:</strong> Agencies under pressure to modernize old systems, adopt AI, or replace slow manual processes. <strong style="color:#0A2240;">You get:</strong> Work that used to take days happens in minutes; legacy systems get a modern front end.</p>
-        <a href="Index.dc.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" data-hover="background:#071A33;transform:translateY(-1px);">Tell Us the Process You Want to Modernize →</a>
+        <a href="index.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" style-hover="background:#071A33;transform:translateY(-1px);">Tell Us the Process You Want to Modernize →</a>
       </div>
-      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" data-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
+      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" style-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
         <div style="font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6B7688;margin-bottom:8px;">Service 4 · NAICS 518210 · 519130</div>
         <h3 style="font-size:24px;color:#0A2240;margin-bottom:12px;">Cloud &amp; Data Infrastructure</h3>
         <p style="color:#3F4A5C;font-size:16px;line-height:1.7;margin-bottom:14px;">We help agencies move to and operate inside FedRAMP-authorized cloud environments — AWS GovCloud, Azure Government, hosted data services, and the data-processing pipelines your programs depend on.</p>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;margin-bottom:20px;"><strong style="color:#0A2240;">Best for:</strong> Programs migrating off legacy infrastructure or scaling secure data services for analytics and AI. <strong style="color:#0A2240;">You get:</strong> A clean migration plan, lower operations cost, and an environment that meets your security mandate.</p>
-        <a href="Index.dc.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" data-hover="background:#071A33;transform:translateY(-1px);">Scope Your Cloud Migration →</a>
+        <a href="index.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" style-hover="background:#071A33;transform:translateY(-1px);">Scope Your Cloud Migration →</a>
       </div>
-      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" data-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
+      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" style-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
         <div style="font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6B7688;margin-bottom:8px;">Service 5 · NAICS 517311 · 517110</div>
         <h3 style="font-size:24px;color:#0A2240;margin-bottom:12px;">Telecommunications</h3>
         <p style="color:#3F4A5C;font-size:16px;line-height:1.7;margin-bottom:14px;">Network infrastructure, VoIP, satellite communications, and secure-communications support for federal facilities and remote operations. We deliver the connectivity your work depends on.</p>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;margin-bottom:20px;"><strong style="color:#0A2240;">Best for:</strong> Defense, civilian, and field agencies needing reliable network or secure-comms support. <strong style="color:#0A2240;">You get:</strong> Networks that stay up, communications that stay secure.</p>
-        <a href="Index.dc.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" data-hover="background:#071A33;transform:translateY(-1px);">Discuss Your Network Requirement →</a>
+        <a href="index.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" style-hover="background:#071A33;transform:translateY(-1px);">Discuss Your Network Requirement →</a>
       </div>
-      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" data-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
+      <div style="background:#fff;border:1px solid #E2E5EA;border-left:4px solid #B22234;border-radius:8px;padding:36px 40px;transition:box-shadow .2s;" style-hover="box-shadow:0 8px 32px rgba(10,34,64,.1);">
         <div style="font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6B7688;margin-bottom:8px;">Service 6 · NAICS 541519 · 541512</div>
         <h3 style="font-size:24px;color:#0A2240;margin-bottom:12px;">IT &amp; Cybersecurity Services</h3>
         <p style="color:#3F4A5C;font-size:16px;line-height:1.7;margin-bottom:14px;">We protect and run the systems your agency depends on every day. That includes Zero Trust architecture, CMMC 2.0–aligned compliance, NIST 800-171 alignment, security operations center support, vulnerability assessment, and infrastructure operations.</p>
         <p style="color:#6B7688;font-size:15px;line-height:1.65;margin-bottom:20px;"><strong style="color:#0A2240;">Best for:</strong> Federal civilian and defense agencies that must keep sensitive systems secure and stay compliant with federal mandates. <strong style="color:#0A2240;">You get:</strong> Fewer security gaps, cleaner audits, and systems that keep running.</p>
-        <a href="Index.dc.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" data-hover="background:#071A33;transform:translateY(-1px);">Request a Free 30-Minute Readiness Review →</a>
+        <a href="index.html#contact" style="display:inline-block;background:#0A2240;color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:all .18s;" style-hover="background:#071A33;transform:translateY(-1px);">Request a Free 30-Minute Readiness Review →</a>
       </div>
     </div>
   </div>
@@ -251,10 +253,10 @@
     <h2 style="font-size:38px;color:#fff;max-width:720px;margin:0 auto 18px;line-height:1.2;text-wrap:pretty;">You will get the truth, the work done right, and a partner accountable to a fifty-year standard.</h2>
     <p style="color:rgba(255,255,255,.75);font-size:18px;max-width:600px;margin:0 auto 40px;line-height:1.68;">When you bring us onto a contract, you are getting a partner who is registered, verifiable, and accountable — led by someone who has spent his entire life keeping his word to this country.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:28px;">
-      <a href="mailto:john@usgovtservices.com?subject=USGS%20Capability%20Briefing%20Request" style="background:#B22234;color:#fff;font-size:15px;font-weight:600;padding:14px 28px;border-radius:6px;display:inline-block;transition:all .2s;" data-hover="background:#8E1B2C;transform:translateY(-2px);">Request a Capability Briefing</a>
-      <a href="federal-buyers.html" style="color:#fff;font-size:15px;font-weight:600;padding:14px 28px;border-radius:6px;border:2px solid rgba(255,255,255,.45);display:inline-block;transition:all .2s;" data-hover="border-color:rgba(255,255,255,.9);background:rgba(255,255,255,.07);">For Contracting Officers</a>
+      <a href="mailto:john@usgovtservices.com?subject=USGS%20Capability%20Briefing%20Request" style="background:#B22234;color:#fff;font-size:15px;font-weight:600;padding:14px 28px;border-radius:6px;display:inline-block;transition:all .2s;" style-hover="background:#8E1B2C;transform:translateY(-2px);">Request a Capability Briefing</a>
+      <a href="federal-buyers.html" style="color:#fff;font-size:15px;font-weight:600;padding:14px 28px;border-radius:6px;border:2px solid rgba(255,255,255,.45);display:inline-block;transition:all .2s;" style-hover="border-color:rgba(255,255,255,.9);background:rgba(255,255,255,.07);">For Contracting Officers</a>
     </div>
-    <div style="font-size:15px;color:rgba(255,255,255,.65);"><strong style="color:#fff;">(703) 409-8785</strong> &nbsp;·&nbsp; <strong style="color:#fff;">john@usgovtservices.com</strong> &nbsp;·&nbsp; McLean, VA</div>
+    <div style="font-size:15px;color:rgba(255,255,255,.65);"><strong style="color:#fff;">(571) 528-8760</strong> &nbsp;·&nbsp; <strong style="color:#fff;">john@usgovtservices.com</strong> &nbsp;·&nbsp; McLean, VA</div>
   </div>
 </section>
 
@@ -271,10 +273,10 @@
       </div>
       <div>
         <h4 style="color:#fff;font-family:'Public Sans',sans-serif;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:18px;">Navigate</h4>
-        <a href="index.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" data-hover="color:#fff;">Home</a>
-        <a href="about.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" data-hover="color:#fff;">About &amp; Services</a>
-        <a href="federal-buyers.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" data-hover="color:#fff;">Federal Buyers</a>
-        <a href="capability-statement.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;" data-hover="color:#fff;">Capability Statement</a>
+        <a href="index.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" style-hover="color:#fff;">Home</a>
+        <a href="about.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" style-hover="color:#fff;">About &amp; Services</a>
+        <a href="federal-buyers.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" style-hover="color:#fff;">Federal Buyers</a>
+        <a href="capability-statement.html" style="display:block;color:rgba(255,255,255,.6);font-size:14px;" style-hover="color:#fff;">Capability Statement</a>
       </div>
       <div>
         <h4 style="color:#fff;font-family:'Public Sans',sans-serif;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:18px;">Federal Data</h4>
@@ -282,22 +284,44 @@
       </div>
       <div>
         <h4 style="color:#fff;font-family:'Public Sans',sans-serif;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:18px;">Contact</h4>
-        <a href="tel:+17034098785" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" data-hover="color:#fff;">(703) 409-8785</a>
-        <a href="mailto:john@usgovtservices.com" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:18px;" data-hover="color:#fff;">john@usgovtservices.com</a>
-        <a href="accessibility.html" style="display:block;color:rgba(255,255,255,.42);font-size:13px;margin-bottom:7px;" data-hover="color:rgba(255,255,255,.85);">Accessibility (508)</a>
-        <a href="privacy.html" style="display:block;color:rgba(255,255,255,.42);font-size:13px;margin-bottom:7px;" data-hover="color:rgba(255,255,255,.85);">Privacy Policy</a>
-        <a href="terms.html" style="display:block;color:rgba(255,255,255,.42);font-size:13px;" data-hover="color:rgba(255,255,255,.85);">Terms of Use</a>
+        <a href="tel:+15715288760" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:9px;" style-hover="color:#fff;">(571) 528-8760</a>
+        <a href="mailto:john@usgovtservices.com" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-bottom:18px;" style-hover="color:#fff;">john@usgovtservices.com</a>
+        <a href="accessibility.html" style="display:block;color:rgba(255,255,255,.42);font-size:13px;margin-bottom:7px;" style-hover="color:rgba(255,255,255,.85);">Accessibility (508)</a>
+        <a href="privacy.html" style="display:block;color:rgba(255,255,255,.42);font-size:13px;margin-bottom:7px;" style-hover="color:rgba(255,255,255,.85);">Privacy Policy</a>
+        <a href="terms.html" style="display:block;color:rgba(255,255,255,.42);font-size:13px;" style-hover="color:rgba(255,255,255,.85);">Terms of Use</a>
       </div>
     </div>
     <div style="border-top:1px solid rgba(255,255,255,.09);padding-top:24px;font-size:12px;color:rgba(255,255,255,.38);text-align:center;line-height:1.8;">© 2026 US Government Services LLC · 100% Veteran-Owned · SDVOSB — SBA Certified · UEI YR6VHSXZB3X4 · CAGE 1ZQW4 · State of Florida LLC</div>
   </div>
 </footer>
 <script>
-document.querySelectorAll('[data-hover]').forEach(function(el){
-  var base=el.getAttribute('style')||'';
-  var hover=el.getAttribute('data-hover')||'';
-  el.addEventListener('mouseenter',function(){el.setAttribute('style',base+';'+hover);});
-  el.addEventListener('mouseleave',function(){el.setAttribute('style',base);});
+document.addEventListener('DOMContentLoaded',function(){
+  function applyStyleAttr(el,attr){
+    var s=el.getAttribute(attr);
+    if(!s)return;
+    s.split(';').forEach(function(r){
+      var p=r.indexOf(':');
+      if(p<0)return;
+      var k=r.slice(0,p).trim().replace(/-([a-z])/g,function(_,c){return c.toUpperCase();});
+      var v=r.slice(p+1).trim();
+      if(k&&v)el.style[k]=v;
+    });
+  }
+  document.querySelectorAll('[style-hover]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('mouseenter',function(){applyStyleAttr(el,'style-hover');});
+    el.addEventListener('mouseleave',function(){el.setAttribute('style',orig);});
+  });
+  document.querySelectorAll('[style-active]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('mousedown',function(){applyStyleAttr(el,'style-active');});
+    el.addEventListener('mouseup',function(){el.setAttribute('style',orig);});
+  });
+  document.querySelectorAll('[style-focus]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('focus',function(){applyStyleAttr(el,'style-focus');});
+    el.addEventListener('blur',function(){el.setAttribute('style',orig);});
+  });
 });
 </script>
 </body>

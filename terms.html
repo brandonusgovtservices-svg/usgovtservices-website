@@ -16,7 +16,6 @@
     h1, h2, h3 { font-family: 'Spectral', Georgia, serif; color: #0A2240; line-height: 1.18; font-weight: 600; }
     a { color: inherit; text-decoration: none; }
   </style>
-<style>[data-hover]{transition:all .18s ease;}</style>
 </head>
 <body>
 <div style="height:5px;background:#B22234;width:100%;"></div>
@@ -27,11 +26,11 @@
       <span style="font-family:'Spectral',Georgia,serif;color:#fff;font-size:17px;font-weight:700;line-height:1.2;">US GOVERNMENT <span style="border-bottom:3px solid #B22234;padding-bottom:1px;">SERVICES</span></span>
     </a>
     <nav style="display:flex;gap:28px;align-items:center;">
-      <a href="index.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" data-hover="color:#fff;">Home</a>
-      <a href="about.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" data-hover="color:#fff;">About &amp; Services</a>
-      <a href="federal-buyers.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" data-hover="color:#fff;">Federal Buyers</a>
-      <a href="capability-statement.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" data-hover="color:#fff;">Capability Statement</a>
-      <a href="Index.dc.html#contact" style="background:#B22234;color:#fff;font-size:13.5px;font-weight:600;padding:8px 18px;border-radius:6px;" data-hover="background:#8E1B2C;">Request a Briefing</a>
+      <a href="index.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" style-hover="color:#fff;">Home</a>
+      <a href="about.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" style-hover="color:#fff;">About &amp; Services</a>
+      <a href="federal-buyers.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" style-hover="color:#fff;">Federal Buyers</a>
+      <a href="capability-statement.html" style="color:rgba(255,255,255,.72);font-size:14px;font-weight:500;" style-hover="color:#fff;">Capability Statement</a>
+      <a href="index.html#contact" style="background:#B22234;color:#fff;font-size:13.5px;font-weight:600;padding:8px 18px;border-radius:6px;" style-hover="background:#8E1B2C;">Request a Briefing</a>
     </nav>
   </div>
 </header>
@@ -80,7 +79,7 @@
       <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:18px;">These Terms are governed by the laws of the Commonwealth of Virginia and the United States, without regard to conflict-of-laws principles, except where federal contract law applies.</p>
 
       <h2 style="font-size:26px;color:#0A2240;margin-bottom:14px;margin-top:40px;">Contact</h2>
-      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:40px;">US Government Services LLC<br>McLean, VA 22102<br>(703) 409-8785 &nbsp;·&nbsp; <a href="mailto:john@usgovtservices.com" style="color:#B22234;font-weight:600;" data-hover="text-decoration:underline;">john@usgovtservices.com</a></p>
+      <p style="font-size:17px;color:#3F4A5C;line-height:1.72;margin-bottom:40px;">US Government Services LLC<br>McLean, VA 22102<br>(571) 528-8760 &nbsp;·&nbsp; <a href="mailto:john@usgovtservices.com" style="color:#B22234;font-weight:600;" style-hover="text-decoration:underline;">john@usgovtservices.com</a></p>
       <p style="font-size:14px;color:#6B7688;">Last updated: 2026.</p>
     </div>
   </div>
@@ -90,18 +89,40 @@
   <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
     <div style="font-size:12px;color:rgba(255,255,255,.45);">© 2026 US Government Services LLC · UEI YR6VHSXZB3X4 · CAGE 1ZQW4</div>
     <div style="display:flex;gap:20px;">
-      <a href="index.html" style="color:rgba(255,255,255,.5);font-size:13px;" data-hover="color:#fff;">Home</a>
-      <a href="accessibility.html" style="color:rgba(255,255,255,.5);font-size:13px;" data-hover="color:#fff;">Accessibility</a>
-      <a href="privacy.html" style="color:rgba(255,255,255,.5);font-size:13px;" data-hover="color:#fff;">Privacy</a>
+      <a href="index.html" style="color:rgba(255,255,255,.5);font-size:13px;" style-hover="color:#fff;">Home</a>
+      <a href="accessibility.html" style="color:rgba(255,255,255,.5);font-size:13px;" style-hover="color:#fff;">Accessibility</a>
+      <a href="privacy.html" style="color:rgba(255,255,255,.5);font-size:13px;" style-hover="color:#fff;">Privacy</a>
     </div>
   </div>
 </footer>
 <script>
-document.querySelectorAll('[data-hover]').forEach(function(el){
-  var base=el.getAttribute('style')||'';
-  var hover=el.getAttribute('data-hover')||'';
-  el.addEventListener('mouseenter',function(){el.setAttribute('style',base+';'+hover);});
-  el.addEventListener('mouseleave',function(){el.setAttribute('style',base);});
+document.addEventListener('DOMContentLoaded',function(){
+  function applyStyleAttr(el,attr){
+    var s=el.getAttribute(attr);
+    if(!s)return;
+    s.split(';').forEach(function(r){
+      var p=r.indexOf(':');
+      if(p<0)return;
+      var k=r.slice(0,p).trim().replace(/-([a-z])/g,function(_,c){return c.toUpperCase();});
+      var v=r.slice(p+1).trim();
+      if(k&&v)el.style[k]=v;
+    });
+  }
+  document.querySelectorAll('[style-hover]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('mouseenter',function(){applyStyleAttr(el,'style-hover');});
+    el.addEventListener('mouseleave',function(){el.setAttribute('style',orig);});
+  });
+  document.querySelectorAll('[style-active]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('mousedown',function(){applyStyleAttr(el,'style-active');});
+    el.addEventListener('mouseup',function(){el.setAttribute('style',orig);});
+  });
+  document.querySelectorAll('[style-focus]').forEach(function(el){
+    var orig=el.getAttribute('style')||'';
+    el.addEventListener('focus',function(){applyStyleAttr(el,'style-focus');});
+    el.addEventListener('blur',function(){el.setAttribute('style',orig);});
+  });
 });
 </script>
 </body>
